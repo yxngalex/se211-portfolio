@@ -5,7 +5,8 @@
   justify-content: space-between;
   margin-bottom: 25px;
   background-color: #111;
-  font-size: .7em;
+  font-size: .6em;
+  position: sticky;
 
   .logo {
     color: #FCFCFC;
@@ -31,9 +32,30 @@
         background-color: #4C566A;
         background-color: rgba(76, 86, 106, .2);
         transition: all .2s ease-in;
+        color: #B48EAD;
         border-radius: 5px;
       }
     }
 
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    font-size: .4em;
+  }
+  .option {
+    font-size: .8em;
+    padding: 5px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: .3em;
+  }
+  .option {
+    font-size: .4em;
+    padding: 5px 5px;
   }
 }

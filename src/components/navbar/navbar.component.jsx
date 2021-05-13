@@ -12,7 +12,8 @@ const NavBar = () => {
                 Aleksa Cekić
             </Link>
             <div className='options'>
-                <Link className='option scale-in-center' to='/test'>TEST</Link>
+                <Link className='option scale-in-center' to='/experience'>EXPERIENCE</Link>
+                <Link className='option scale-in-center' to='/projects'>PROJECTS</Link>
                 <Link className='option scale-in-center' to='/contact'>CONTACT</Link>
             </div>
         </div>
