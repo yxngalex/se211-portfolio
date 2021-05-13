@@ -7,6 +7,7 @@
   border: solid whitesmoke;
   border-right: none;
   border-left: none;
+  text-decoration: none;
 
   h2 {
     text-align: center;
@@ -18,8 +19,9 @@
     height: auto;
     text-align: center;
 
-    i.fa + i.fa {
-      margin-left: 0.5em;
+    a {
+      color: #FCFCFC;
+      margin: 0 0.5em;
     }
 
     i {
