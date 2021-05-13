@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className="image-container">
                 <img src='https://scontent.fbeg5-1.fna.fbcdn.net/v/t1.6435-9/118378826_3535231199841035_2511745486699800012_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeHLAH3NUDd3IgcIYpjgdN7ngOqVgsXWDuWA6pWCxdYO5T-GbISC9e9xLjF1yeP4INBsFgyuhwDbdozC9Obr1KHf&_nc_ohc=NIx7L_31ongAX-wx4w7&_nc_ht=scontent.fbeg5-1.fna&oh=944ec05d243a1667beedbb35e95e9f37&oe=60C44123'
-                     width='447' height='447' alt='me'/>
+                     width='447' height='447' alt='me' />
             </div>
         </div>
     );

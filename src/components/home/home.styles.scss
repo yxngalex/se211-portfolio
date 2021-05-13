@@ -1,10 +1,12 @@
 .home {
+  margin-bottom: 19em;
+
   h3 {
     padding-bottom: 1em;
   }
 
   .about-text {
-    width: 75%;
+    width: 100%;
     font-size: .8em;
     padding-bottom: 0.6em;
   }
@@ -12,8 +14,10 @@
   .description {
     display: flex;
     float: left;
+
     .me {
       margin-top: 8em;
+      padding-left: 10em;
     }
   }
 
@@ -24,5 +28,4 @@
     margin-right: 2em;
   }
 
-  margin-bottom: 19em;
 }

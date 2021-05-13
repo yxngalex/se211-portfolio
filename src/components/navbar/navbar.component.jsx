@@ -12,7 +12,7 @@ const NavBar = () => {
                 Aleksa Cekić
             </Link>
             <div className='options'>
-                <Link className='option' exact to='/experience'>ABOUT</Link>
+                <Link className='option' exact to='/about'>ABOUT</Link>
                 <Link className='option' exact to='/experience'>EXPERIENCE</Link>
                 <Link className='option' exact to='/projects'>PROJECTS</Link>
                 <Link className='option' exact to='/contact'>CONTACT</Link>

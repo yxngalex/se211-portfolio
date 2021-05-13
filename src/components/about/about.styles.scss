@@ -1,6 +1,39 @@
 .about {
+  margin-bottom: 16em;
+
   h2 {
     padding: 1em 0;
     text-align: center;
+  }
+
+  h3 {
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-top: 5vh;
+    padding-bottom: 1em;
+    width: 75%;
+    height: 100%;
+
+    p {
+      width: 100%;
+      font-size: .8em;
+    }
+  }
+
+  .education {
+    width: 75%;
+    height: 100%;
+    float: right;
+    padding-top: 10vh;
+
+    ul {
+      font-size: .7em;
+      li {
+        padding-bottom: .9em;
+      }
+    }
   }
 }
