@@ -3,6 +3,9 @@ import NavBar from "./components/navbar/navbar.component";
 import {Switch,  Route} from "react-router-dom";
 
 import HomePage from "./pages/homepage/homepage.component";
+import Experience from "./pages/experience/experience.component";
+import ProjectsPage from "./pages/projects/projects.component";
+import Contact from "./pages/contact/contact.component";
 
 function App() {
   return (
@@ -10,9 +13,9 @@ function App() {
       <NavBar/>
       <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/experience' />
-          <Route path='/projects' />
-          <Route path='/contact' />
+          <Route exact path='/experience' component={Experience} />
+          <Route exact path='/projects' component={ProjectsPage} />
+          <Route exact path='/contact' component={Contact} />
       </Switch>
     </div>
   );

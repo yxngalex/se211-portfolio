@@ -1,0 +1,28 @@
+.home {
+  h3 {
+    padding-bottom: 1em;
+  }
+
+  .about-text {
+    width: 75%;
+    font-size: .8em;
+    padding-bottom: 0.6em;
+  }
+
+  .description {
+    display: flex;
+    float: left;
+    .me {
+      margin-top: 8em;
+    }
+  }
+
+  .image-container {
+    margin-top: 1em;
+    display: flex;
+    float: right;
+    margin-right: 2em;
+  }
+
+  margin-bottom: 19em;
+}

@@ -10,4 +10,9 @@ body {
   font-family: "Fira Code", sans-serif;
   font-size: 1.8em;
   color: #FCFCFC;
+
+  ::selection {
+    background: #A8D8FF;
+  }
+
 }
