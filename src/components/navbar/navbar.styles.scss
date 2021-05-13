@@ -4,11 +4,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  background-color: whitesmoke;
-  font-family: "Lato", sans-serif;
+  background-color: #111;
+  font-size: .7em;
 
   .logo {
-    color: black;
+    color: #FCFCFC;
     align-items: center;
     display: flex;
     justify-content: flex-start;
@@ -24,7 +24,7 @@
 
     .option {
       padding: 10px 15px;
-      color: black;
+      color: #FCFCFC;
       cursor: pointer;
 
       &:hover {
