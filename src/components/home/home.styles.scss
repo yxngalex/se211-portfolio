@@ -11,21 +11,27 @@
     padding-bottom: 0.6em;
   }
 
+  .myself {
+    display: grid;
+    grid-template-areas: "description image";
+    position: relative;
+    margin-top: 2em;
+  }
+
+
+
   .description {
-    display: flex;
-    float: left;
+    grid-template: "description";
+    position: relative;
 
     .me {
-      margin-top: 8em;
-      padding-left: 10em;
+      position: absolute;
+      top: calc(50% - 1em);
     }
   }
 
-  .image-container {
-    margin-top: 1em;
-    display: flex;
-    float: right;
-    margin-right: 2em;
+  .image {
+    grid-template: "image";
+    text-align: center;
   }
-
 }
