@@ -1,8 +1,9 @@
 .home {
-  margin-bottom: 19em;
+  border-bottom: 2px #555555 solid;
 
   h3 {
     padding-bottom: 1em;
+    font-size: 50px;
   }
 
   .about-text {
@@ -19,7 +20,6 @@
   }
 
 
-
   .description {
     grid-template: "description";
     position: relative;
@@ -33,5 +33,30 @@
   .image {
     grid-template: "image";
     text-align: center;
+  }
+
+  .more-info {
+    position: relative;
+    text-align: left;
+    display: grid;
+    grid-template-areas: "touch booking";
+    margin: 5em 0;
+
+    .touch {
+      grid-template: "touch";
+      position: relative;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .book {
+      grid-template: "booking";
+
+      p {
+        text-align: center;
+      }
+    }
   }
 }

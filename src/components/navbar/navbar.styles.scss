@@ -18,10 +18,20 @@
     padding: 10px 15px;
   }
 
+  .inbetween {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+  }
+
   .options {
     width: 50%;
     height: 100%;
-    display: flex;
+    position: absolute;
+    display: grid;
+    left: 48.66667vw;
     align-items: center;
     justify-content: flex-end;
 
@@ -29,12 +39,12 @@
       padding: 10px 15px;
       color: #FCFCFC;
       cursor: pointer;
+      text-align: center;
+
 
       &:hover {
-        background-color: #4C566A;
-        background-color: rgba(76, 86, 106, .2);
-        transition: all .2s ease-in;
-        color: #B48EAD;
+        transition: all .3s ease-in;
+        color: #FBDB65;
         border-radius: 5px;
       }
     }

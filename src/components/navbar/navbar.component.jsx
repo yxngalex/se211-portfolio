@@ -8,13 +8,16 @@ import {Link} from "react-router-dom";
 const NavBar = () => {
     return (
         <div className='header'>
-            <Link to='/' className='logo animate__animated animate__fadeInUp'>
+            <Link to='/' className='logo'>
                 Aleksa Cekić
             </Link>
+            <div className='inbetween'>
+                <p>Portfolio</p>
+            </div>
             <div className='options'>
-                <Link className='option' exact to='/experience'>EXPERIENCE</Link>
-                <Link className='option' exact to='/projects'>PROJECTS</Link>
-                <Link className='option' exact to='/contact'>CONTACT</Link>
+                <Link className='option' exact to='/'>home</Link>
+                <Link className='option' exact to='/projects'>about</Link>
+                <Link className='option' exact to='/contact'>contact</Link>
             </div>
         </div>
     );
