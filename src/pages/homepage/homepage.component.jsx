@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './hompage.styles.scss';
+import "./hompage.styles.scss";
 import Home from "../../components/home/home.component";
 import Contact from "../../components/contact/contact.component";
 import About from "../../components/about/about.component";

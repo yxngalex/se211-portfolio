@@ -1,6 +1,5 @@
-import React from 'react';
-
-import './about.styles.scss';
+import "./about.styles.scss";
+import Accordion from "../accordion/accordion.component";
 
 const About = () => {
     return (
@@ -8,25 +7,14 @@ const About = () => {
             <h2>About</h2>
             <div>
                 <div className="about-section">
-                    <div class="about-header">
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
-                        <h3>Experience</h3>
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
+                    <div className="about-info">
+                        <Accordion title="Experience" content="Content"/>
                     </div>
-                    <div className="experience-description"/>
-                </div>
-                <div className="about-section">
-                    <div className="about-header">
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
-                        <h3 className="knowledge-headline">Knowledge</h3>
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
+                    <div className="about-info">
+                        <Accordion title="Test" content="Content1"/>
                     </div>
-                </div>
-                <div className="about-section">
-                    <div className="about-header">
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
-                        <h3 className="knowledge-headline">Projects</h3>
-                        <i className="fa fa-arrow-down" aria-hidden="true"/>
+                    <div className="about-info">
+                        <Accordion title="Projects" content="Content2"/>
                     </div>
                 </div>
             </div>

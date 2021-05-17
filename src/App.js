@@ -1,4 +1,4 @@
-import './App.scss';
+import "./App.scss";
 import NavBar from "./components/navbar/navbar.component";
 import {Switch, Route} from "react-router-dom";
 
@@ -14,10 +14,10 @@ function App() {
         <div>
             <NavBar/>
             <Switch>
-                <Route exact path='/' component={HomePage}/>
-                {/*<Route exact path='/about' component={Experience}/>*/}
-                {/*<Route exact path='/projects' component={ProjectsPage}/>*/}
-                {/*<Route exact path='/contact' component={Contact}/>*/}
+                <Route exact path="/" component={HomePage}/>
+                {/*<Route exact path="/about" component={Experience}/>*/}
+                {/*<Route exact path="/projects" component={ProjectsPage}/>*/}
+                {/*<Route exact path="/contact" component={Contact}/>*/}
             </Switch>
             <Footer/>
         </div>

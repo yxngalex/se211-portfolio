@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  background-color: #111;
+  background: linear-gradient(180deg,
+          #111, rgba(17, 17, 17, 0));
   font-size: .6em;
   position: sticky;
   top: 0;
@@ -16,14 +17,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 10px 15px;
-  }
-
-  .inbetween {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 20px;
+    opacity: 1 !important;
   }
 
   .options {
@@ -34,6 +28,7 @@
     left: 48.66667vw;
     align-items: center;
     justify-content: flex-end;
+    opacity: 1 !important;
 
     .option {
       padding: 10px 15px;
@@ -50,6 +45,10 @@
     }
 
   }
+}
+
+.h-gradient {
+
 }
 
 @media (max-width: 800px) {

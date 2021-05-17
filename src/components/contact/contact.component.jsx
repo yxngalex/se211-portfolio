@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './contact.styles.scss';
+import "./contact.styles.scss";
 import {Tooltip} from "@material-ui/core";
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div className="contact">
             <h2>CONTACT INFO</h2>
             <div className="icons">
                 <Tooltip title="Email" arrow>
