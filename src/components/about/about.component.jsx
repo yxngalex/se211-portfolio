@@ -8,13 +8,13 @@ const About = () => {
             <div>
                 <div className="about-section">
                     <div className="about-info">
-                        <Accordion title="Experience" content="Content"/>
+                        <Accordion title="Experience" content="Content" />
                     </div>
                     <div className="about-info">
-                        <Accordion title="Test" content="Content1"/>
+                        <Accordion title="Test" content="Content1" />
                     </div>
                     <div className="about-info">
-                        <Accordion title="Projects" content="Content2"/>
+                        <Accordion title="Projects" content="Content2" />
                     </div>
                 </div>
             </div>

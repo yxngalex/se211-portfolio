@@ -1,23 +1,19 @@
 .accordion__section {
 
-  .active {
-    display: initial !important;
-    transition: max-height 0.6s ease;
-    overflow: hidden;
-  }
-
   .accordion-description {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out;
+
+    &.active {
+      max-height: 10em;
+    }
   }
 
   .accordion-header {
     padding: 60px 30px;
     cursor: pointer;
-    display: -webkit-flex;
-    //display: -moz-box;
     display: flex;
-    -webkit-align-items: center;
-    -moz-box-align: center;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -25,9 +21,12 @@
     h3 {
       width: 100%;
       text-align: center;
-      //padding-right: 10%;
       font-size: 2em;
       font-weight: 600;
+
+      &.active {
+        color: #FBDB65;;
+      }
     }
   }
 
@@ -37,7 +36,18 @@
   }
 
   .rotate {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
     transition:0.6s ease;
+    color: #FBDB65;
+  }
+
+  .reverse-rotate {
+    transform: rotate(0deg);
+    transition:0.6s ease;
+    color: #FCFCFC;
+  }
+
+  .expanded {
+
   }
 }
