@@ -6,7 +6,19 @@
     transition: max-height 0.7s ease-in-out;
 
     &.active {
-      max-height: 10em;
+      max-height: 30em;
+      overflow: auto;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    .accordion-text {
+      text-align: center;
+      font-size: 30px;
+      margin-right: 20%;
+      width: 100%;
     }
   }
 
@@ -37,17 +49,13 @@
 
   .rotate {
     transform: rotate(-180deg);
-    transition:0.6s ease;
+    transition: 0.6s ease;
     color: #FBDB65;
   }
 
   .reverse-rotate {
     transform: rotate(0deg);
-    transition:0.6s ease;
+    transition: 0.6s ease;
     color: #FCFCFC;
-  }
-
-  .expanded {
-
   }
 }

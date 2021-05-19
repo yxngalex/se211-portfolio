@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import "./accordion.styles.scss";
 
 
-const Accordion = ({title, content}) => {
+const Accordion = ({title, content, headline}) => {
     const [active, setActive] = useState("");
     const [rotate, setRotate] = useState("");
 
@@ -20,8 +20,12 @@ const Accordion = ({title, content}) => {
                 <i className={`fa fa-chevron-down ${rotate}`} aria-hidden="true"/>
             </div>
             <div className={`accordion-description ${active}`}>
-                <h4>{title}</h4>
-                <p dangerouslySetInnerHTML={{__html: content}}/>
+                <div>
+                    <h4 className="accordion-headline">{headline}</h4>
+                    <div className="accordion-text">
+                        <p dangerouslySetInnerHTML={{__html: content}}/>
+                    </div>
+                </div>
             </div>
         </div>
     );
