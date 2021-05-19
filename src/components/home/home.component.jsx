@@ -1,8 +1,14 @@
-import React from "react";
-
+import React, {useEffect} from "react";
+import AOS from "aos";
 import "./home.styles.scss";
+import "aos/dist/aos.css";
 
 const Home = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, []);
+
     return (
         <div className="home">
             <h2 className="header-text">Hello, <br/>
@@ -18,8 +24,8 @@ const Home = () => {
                 about solving all kinds of different problems and I love breaking down complex problems into simple
                 solutions.
             </p>
-            <section className="myself">
-                <div className="description">
+            <section data-aos="fade-up" className="myself">
+                <div data-aos="fade-up" className="description">
                     <p className="me">This is me <span
                         className="point-emoji emoji emoji-point-animation">&#128073;</span></p>
                 </div>
@@ -29,7 +35,7 @@ const Home = () => {
                         width="447" height="447" alt="me"/>
                 </div>
             </section>
-            <section>
+            <section data-aos="fade-up">
                 <div className="more-info">
                     <div className="touch">
                         <p>So let's get in touch! <span className="peace-emoji emoji">&#9996;</span></p>

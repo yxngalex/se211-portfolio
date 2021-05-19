@@ -1,12 +1,20 @@
 import "./about.styles.scss";
 import Accordion from "../accordion/accordion.component";
+import {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, []);
+
     return (
-        <section className="about">
+        <section data-aos="fade-up" className="about">
             <h2>About</h2>
             <div>
-                <div className="about-section">
+                <div data-aos="fade-up" className="about-section">
                     <div className="about-info">
                         <Accordion
                             title="Experience"
