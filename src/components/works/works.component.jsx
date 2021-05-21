@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 
 import "./works.styles.scss";
-import img from "../../assets/images/degenesis_teaser.jpg";
+import img from "../../assets/images/gta-online.jpg";
 import WorksContainer from "../works-container/works.container.component";
 import AOS from "aos";
 
@@ -21,7 +21,7 @@ const Works = () => {
                     <a href="#">
                         <WorksContainer
                             imagePath={img}
-                            name="DEGENESIS"
+                            name="Grand Theft Auto"
                         />
                     </a>
                 </section>
