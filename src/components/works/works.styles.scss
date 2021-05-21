@@ -1,0 +1,19 @@
+.works {
+  padding: 15vh 0;
+  text-decoration: none !important;
+
+  .works-heading-line {
+
+    h3 {
+      text-align: center;
+      font-size: 2.5vw;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .works-showcase {
+      margin: 5vh 0;
+      display: grid;
+      position: relative;
+    }
+  }
+}

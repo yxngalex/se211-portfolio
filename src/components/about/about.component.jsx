@@ -7,14 +7,14 @@ import "aos/dist/aos.css";
 const About = () => {
 
     useEffect(() => {
-        AOS.init({duration: 1000});
+        AOS.init({duration: 2000});
     }, []);
 
     return (
         <section data-aos="fade-up" className="about">
             <h2>About</h2>
             <div>
-                <div data-aos="fade-up" className="about-section">
+                <div data-aos="fade-up"  className="about-section">
                     <div className="about-info">
                         <Accordion
                             title="Experience"
@@ -39,25 +39,11 @@ const About = () => {
                         <Accordion
                             title="About me"
                             headline="More about me"
-                            content="Hi, my name is Aleksa born on 8th of August 1999. I am your standard garden variety
-								software nerd. That means if something has computer code in it, I have already read
-								about it or tried to
-								implement it myself. Among the huge range of my interests I would emphasize the server
-								programming,
-								networking and scripting languages as my strong points. Regarding Web development I had
-								written
-								servers in 6 technologies so far but I tend to default to Express.js or Flask for my day
-								to day needs. As for
-								programming my go to languages are Go, C and Python. I have decent knowledge of Java and
-								some others.
-								Also I'm a Linux user and a big fan of Arch which I have installed on multiple machines.
-								Aside from programming I do documentary photography and my photos are regularly uploaded
-								to
-								Instagram by my Python bot. Cycling is my go-to relaxation activity, helps me clear my
-								head so I can solve
-								problems better. I think I am honest, enthusiastic, easy to work with and more than
-								willing to think outside
-								of the box to solve any problem."
+                            content="Hi, my name is Aleksa born on 8th of August 1999. I'm really interested in
+                                solving all kinds of different problems. You can say that I'm a nerd aspired to
+                                be the best in everything that I do. I'm very interested in technology and the
+                                whole concept of software engineering and computer science. I would emphesize the
+                                scripting languages, networking and the server programming as my strong points."
                         />
                     </div>
                 </div>

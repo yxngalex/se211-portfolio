@@ -12,9 +12,9 @@ const NavBar = () => {
                 Aleksa Cekić
             </Link>
             <div className="options">
-                <Link className="option" to="/">home</Link>
-                <Link className="option" to="/works">works</Link>
-                <Link className="option" to="/contact">contact</Link>
+                <Link className="option" to="/">Home</Link>
+                <Link className="option" to="/works">Works</Link>
+                <Link className="option" to="/contact">Contact</Link>
             </div>
         </div>
     );

@@ -2,23 +2,25 @@
   border-bottom: 2px #555555 solid;
 
   .header-text {
-    padding-bottom: 1em;
+    padding-bottom: 20vh;
     font-size: 120px;
     text-align: center;
     font-weight: 700;
+    font-family: "Poppins", sans-serif;
   }
 
   .about-text {
     width: 100%;
-    font-size: .8em;
+    font-size: 4vh;
     padding-bottom: 0.6em;
+    text-align: center;
   }
 
   .myself {
     display: grid;
     grid-template-areas: "description image";
     position: relative;
-    margin-top: 2em;
+    margin-top: 27vh;
   }
 
 
@@ -27,8 +29,8 @@
     position: relative;
 
     .me {
-      position: absolute;
       top: calc(50% - 1em);
+      width: 65%;
     }
   }
 
@@ -41,24 +43,16 @@
     position: relative;
     text-align: left;
     display: grid;
-    grid-template-areas: "touch booking";
     margin: 5em 0;
 
     .touch {
-      grid-template: "touch";
-      position: relative;
 
-      p {
+      h2 {
         text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 8vh;
       }
     }
 
-    .book {
-      grid-template: "booking";
-
-      p {
-        text-align: center;
-      }
-    }
   }
 }
