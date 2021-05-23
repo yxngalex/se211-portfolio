@@ -14,7 +14,7 @@ const Works = () => {
     return (
         <section data-aos="fade-up" className="works">
             <div className="works-heading-line">
-                <h3>Works</h3>
+                <h3>Featured Work</h3>
             </div>
             <div>
                 <section className="works-showcase">

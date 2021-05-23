@@ -14,17 +14,23 @@ const WorksContainer = ({imagePath, name}) => {
     return (
         <div data-aos="fade-up" className="works-container">
             <Link to="/works">
-            <div className="pic-container">
-                <div className="pic-img-container">
-                    <img src={`${imagePath}`} alt="thumbnail"/>
+                <div className="pic-container">
+                    <div className="pic-img-container">
+                        <img src={`${imagePath}`} alt="thumbnail"/>
+                    </div>
+                    <div className="pic-name">
+                        <h3>{name}</h3>
+                    </div>
                 </div>
-                <div className="pic-name">
-                    <h3>{name}</h3>
-                </div>
-            </div>
             </Link>
             <div className="pt-name-box">
-                <Button className="btnon">Show More!</Button>
+                <Link to="/works">
+                    <Button
+                        className="btnon"
+                    >
+                        Show More!
+                    </Button>
+                </Link>
             </div>
         </div>
     )
