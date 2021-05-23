@@ -18,12 +18,10 @@ const Works = () => {
             </div>
             <div>
                 <section className="works-showcase">
-                    <a href="#">
                         <WorksContainer
                             imagePath={img}
-                            name="Grand Theft Auto"
+                            name="ROCKSTAR"
                         />
-                    </a>
                 </section>
             </div>
         </section>
