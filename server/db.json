@@ -6,6 +6,27 @@
       "lastName": "Cekic",
       "email": "aleksa.cekic.4173@metropolitan.ac.rs",
       "budget": "132"
+    },
+    {
+      "id": "859f16d6-af83-4d06-8edd-8e914db456e1",
+      "name": "Aleksa",
+      "lastName": "Cekic",
+      "email": "aleksacekic@gmail.com",
+      "budget": "1234"
+    },
+    {
+      "id": "aae680c2-9e81-4118-a7d7-e880bd896ccd",
+      "name": "Marko",
+      "lastName": "Markovic",
+      "email": "markomarkovic@gmail.com",
+      "budget": "4000"
+    },
+    {
+      "id": "60665ba7-a638-4d2b-9ffe-3a9c9aef0755",
+      "name": "Tomislav",
+      "lastName": "Živadinović",
+      "email": "tomakoma@gmail.com",
+      "budget": "4000"
     }
   ]
 }

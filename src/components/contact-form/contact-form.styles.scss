@@ -31,10 +31,16 @@
       margin-left: 2vw;
     }
 
-    .theme-submit {
+    .btn-submit {
       background: #FBDB65;
-      color: #FCFCFC;
+      color: #111;
       margin-bottom: 33vh;
+
+      &:hover {
+        color: #FCFCFC;
+        background: #d2a914;
+        transition: all 0.6s ease;
+      }
     }
   }
 
