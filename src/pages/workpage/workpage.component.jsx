@@ -7,7 +7,7 @@ import "./workpage.styles.scss";
 const WorkPage = () => {
     return (
         <div>
-            <Showcase imagePath={img} name="ROCKSTAR" />
+            {/*<Showcase imagePath={img} name="ROCKSTAR" />*/}
         </div>
     );
 }
