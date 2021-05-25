@@ -5,9 +5,6 @@ import ContactForm from "../../components/contact-form/contact-form.component";
 
 const ContactPage = () => {
 
-    const saveContact = contactToBeSaved => {
-
-    }
 
     return (
         <div className="contact-page">
@@ -15,7 +12,7 @@ const ContactPage = () => {
                 <h2>Let's start your project together:</h2>
             </div>
             <div>
-                <ContactForm saveContact={saveContact} />
+                <ContactForm />
             </div>
         </div>
     );

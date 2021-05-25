@@ -3,9 +3,10 @@ import {Button, TextField, Tooltip} from "@material-ui/core";
 import {v4 as uuidv4} from "uuid";
 
 import "./contact-form.styles.scss";
+import {saveContact} from "../../services/services.service";
 
 
-const ContactForm = ({saveContact}) => {
+const ContactForm = () => {
     const [contact, setContact] = useState({
         id: "",
         name: "",
@@ -18,11 +19,20 @@ const ContactForm = ({saveContact}) => {
         setContact({...contact, [event.target.id]: event.target.value});
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = (ev) => {
+        ev.preventDefault();
         if (contact.name.trim() && contact.lastName.trim() && contact.email.trim() && contact.budget.trim()) {
-            saveContact({...contact, id: uuidv4()});
-            setContact({...contact, contact: ""});
+            saveContact({...contact, id: uuidv4()})
+                .then(res => {
+                    console.log(res);
+                    setContact({
+                        id: "",
+                        name: "",
+                        lastName: "",
+                        email: "",
+                        budget: ""
+                    })
+                });
         }
     }
 
@@ -56,7 +66,7 @@ const ContactForm = ({saveContact}) => {
                             className="text-field"
                             type="email"
                             label="Your email"
-                            value={contact?.lastName}
+                            value={contact?.email}
                             onChange={handleInputChange}
                             required
                         />
@@ -74,7 +84,7 @@ const ContactForm = ({saveContact}) => {
                     </div>
                     <div>
                         <Tooltip title="Submit" arrow>
-                            <Button className="btn theme-submit" name="save">Submit</Button>
+                            <input type="submit" value="submit" />
                         </Tooltip>
                     </div>
                 </div>
