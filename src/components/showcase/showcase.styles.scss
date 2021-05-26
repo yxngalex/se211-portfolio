@@ -1,39 +1,29 @@
-.showcase-container {
-  width: 100%;
-  font-family: "Poppins", sans-serif;
+.showcase {
+  position: relative;
 
-  .image-box {
-    width: 33.33333vw;
-    height: calc(100vh - 4.16667vw);
+  img {
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin-left: 7em;
+  }
+
+  .work-content {
     overflow: hidden;
-    margin-left: 10vw;
-
-    img {
-      width: 225%;
-      height: 100%;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-60%, -50%);
-      max-width: none;
+    height: 22vh;
+    width: 25vw;
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1em;
+    }
+    p {
     }
   }
 
-  .work-name-box {
+  .p-hidden {
+    font-size: 20px;
+    width: 50%;
+    float: right;
     position: relative;
-    left: 44.45833vw;
-    bottom: 90vh;
-    display: inline-block;
-    -webkit-box-align: start;
-    align-items: flex-start;
-
-    .number {
-      font-size: 15px;
-      display: inline-block;
-      position: relative;
-      top: -20px;
-      color: #FBDB65;
-    }
-
   }
 }
