@@ -1,6 +1,5 @@
-import React from "react";
-// import Showcase from "../../components/showcase/showcase.component";
-import img from "../../assets/images/thumbnail.jpg";
+import React, {useState} from "react";
+import img from "../../assets/images/neeko.jpg";
 
 import "./workpage.styles.scss";
 
