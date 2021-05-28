@@ -5,7 +5,6 @@ import ContactForm from "../../components/contact-form/contact-form.component";
 
 const ContactPage = () => {
 
-
     return (
         <div className="contact-page">
             <div className="contact-header">

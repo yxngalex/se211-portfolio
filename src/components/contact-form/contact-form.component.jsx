@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import {TextField, Tooltip, Snackbar, Button, IconButton} from "@material-ui/core";
-import CloseIcon from '@material-ui/icons/Close';
+import {TextField, Tooltip} from "@material-ui/core";
 import {v4 as uuidv4} from "uuid";
 import {saveContact} from "../../services/services.service";
 
@@ -14,17 +13,17 @@ const ContactForm = () => {
         email: "",
         budget: ""
     });
-    const [open, setOpen] = useState(false);
+
     const [disabled, setDisabled] = useState(true);
 
-    const handleInputChange = (ev) => {
+    const handleInputChange = ev => {
         setContact({...contact, [ev.target.id]: ev.target.value});
-        if (contact) {
+        if (contact.name && contact.lastName && contact.email && contact.budget) {
             setDisabled(false);
         }
     }
 
-    const handleSubmit = (ev) => {
+    const handleSubmit = ev => {
         ev.preventDefault();
         if (contact.name.trim() && contact.lastName.trim() && contact.email.trim() && contact.budget.trim()) {
             saveContact({...contact, id: uuidv4()})
@@ -40,17 +39,6 @@ const ContactForm = () => {
         }
     }
 
-
-    const handleClick = () => {
-        setOpen(true);
-    };
-
-    const handleClose = (event, reason) => {
-        if (reason === "clickaway") {
-            return;
-        }
-        setOpen(false);
-    };
 
     return (
         <div>
@@ -101,30 +89,10 @@ const ContactForm = () => {
                         </div>
                         <div>
                             <Tooltip title="Submit" arrow>
-                                <input type="submit" className="btn btn-submit" value="Submit" onSubmit={handleClick}
+                                <input type="submit" className="btn btn-submit" value="Submit" id="submit-btn"
                                        disabled={disabled}/>
                             </Tooltip>
                         </div>
-                        <Snackbar
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            open={open}
-                            autoHideDuration={6000}
-                            onClose={handleClose}
-                            message="Note archived"
-                            action={
-                                <React.Fragment>
-                                    <Button color="secondary" size="small" onClick={handleClose}>
-                                        UNDO
-                                    </Button>
-                                    <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
-                                        <CloseIcon fontSize="small"/>
-                                    </IconButton>
-                                </React.Fragment>
-                            }
-                        />
                     </div>
                 </form>
             </div>

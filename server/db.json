@@ -34,6 +34,13 @@
       "lastName": "Testic",
       "email": "dkljasalksd@askld.asd",
       "budget": "1234"
+    },
+    {
+      "id": "58c9bbe2-2707-4bd6-b431-12c16cf5c60a",
+      "name": "Stefan",
+      "lastName": "Gogic",
+      "email": "s.gogic@metropolitan.ac.rs",
+      "budget": "20000"
     }
   ]
 }
