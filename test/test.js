@@ -23,7 +23,7 @@ const logTitle = () => {
         browser.getTitle().then(title => {
             resolve(title);
         });
-    })
+    });
 }
 
 describe("Contact Page", () => {
@@ -31,10 +31,9 @@ describe("Contact Page", () => {
     /**
      * Test case to load our application and check the title.
      */
-
     it("Should load the contact page and check the title", () => {
         return new Promise((reject, resolve) => {
-            browser.get(`${serverUri}`)
+            browser.get(`${serverUri}/contact`)
                 .then(logTitle())
                 .then(title => {
                     assert.strictEqual(title, appTitle);
