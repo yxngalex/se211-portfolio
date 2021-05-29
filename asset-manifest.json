@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/se211-portfolio/static/css/main.3ba9aacf.chunk.css",
+    "main.js": "/se211-portfolio/static/js/main.bc11bc01.chunk.js",
+    "main.js.map": "/se211-portfolio/static/js/main.bc11bc01.chunk.js.map",
+    "runtime-main.js": "/se211-portfolio/static/js/runtime-main.b806ea4a.js",
+    "runtime-main.js.map": "/se211-portfolio/static/js/runtime-main.b806ea4a.js.map",
+    "static/css/2.30fbed10.chunk.css": "/se211-portfolio/static/css/2.30fbed10.chunk.css",
+    "static/js/2.275906e3.chunk.js": "/se211-portfolio/static/js/2.275906e3.chunk.js",
+    "static/js/2.275906e3.chunk.js.map": "/se211-portfolio/static/js/2.275906e3.chunk.js.map",
+    "static/js/3.a25ffd0e.chunk.js": "/se211-portfolio/static/js/3.a25ffd0e.chunk.js",
+    "static/js/3.a25ffd0e.chunk.js.map": "/se211-portfolio/static/js/3.a25ffd0e.chunk.js.map",
+    "index.html": "/se211-portfolio/index.html",
+    "static/css/2.30fbed10.chunk.css.map": "/se211-portfolio/static/css/2.30fbed10.chunk.css.map",
+    "static/css/main.3ba9aacf.chunk.css.map": "/se211-portfolio/static/css/main.3ba9aacf.chunk.css.map",
+    "static/js/2.275906e3.chunk.js.LICENSE.txt": "/se211-portfolio/static/js/2.275906e3.chunk.js.LICENSE.txt",
+    "static/media/gta-online.9fa13321.jpg": "/se211-portfolio/static/media/gta-online.9fa13321.jpg",
+    "static/media/neeko.542de9d9.jpg": "/se211-portfolio/static/media/neeko.542de9d9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b806ea4a.js",
+    "static/css/2.30fbed10.chunk.css",
+    "static/js/2.275906e3.chunk.js",
+    "static/css/main.3ba9aacf.chunk.css",
+    "static/js/main.bc11bc01.chunk.js"
+  ]
+}
